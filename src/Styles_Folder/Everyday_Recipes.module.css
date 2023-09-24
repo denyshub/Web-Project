@@ -1,0 +1,35 @@
+.Everyday_Text{
+  font-family: 'Caveat', cursive;
+  font-size: 3rem;
+  text-align: left ;
+  color:#fc2947 ;
+  height: 20px;
+}
+
+.Everyday_Text_Aligner{
+  width: 50%;
+  padding-left: 100px;
+  margin-top: 200px;
+height: 130px;
+}
+
+.Recipes_Container{
+  
+  width: 1500px;
+  display: flex;
+  flex-direction: row;
+  gap: 5rem;
+  height: auto;
+  flex-wrap: wrap;
+justify-content:space-around;
+padding-bottom: 100px;
+}
+
+.EveryDay_Container_Aligner{
+display: flex;
+justify-content: center;
+}
+
+.Line_Container{
+margin-bottom: 20px;
+}

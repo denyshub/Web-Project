@@ -1,0 +1,53 @@
+.Menu_Horizontal_Aligner{
+  display: flex;
+  justify-content: center;
+
+}
+.Border_Box{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 15%;
+
+  width: 60%;
+  height: 300px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 80px;
+}
+.Other_Categoties{
+  font-family: "Caveat", cursive; 
+  font-size: 3rem;
+  padding-top: 150px;
+  text-align: center;
+}
+.Menu_Text{
+  text-align: center;
+  font-family: "Croissant One", cursive;
+  font-size: 1.8rem
+}
+.Underlined_Div{
+  margin-top: 50px;
+}
+/* .Underlined_Div{
+  height: 100px;
+  transition: all 0.1s ease;
+  border-bottom: 5px solid #000;
+}
+.Underlined_Div:hover{
+  border-bottom: 0px solid #fc2947;
+  
+} */
+.Menu_Link_Style{
+  text-decoration: none;
+  color: #000;
+  transition: all 0.3s ease;
+}
+
+.Menu_Link_Style:hover {
+  color: #fc2947;
+}
+.Menu_Link_Style img{
+  transition: all 0.3s ease;}
+.Menu_Link_Style img:hover{
+  filter: brightness(80%);
+}
