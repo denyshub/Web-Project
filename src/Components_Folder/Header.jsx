@@ -1,12 +1,8 @@
 import React from "react";
 import styles from "../Styles_Folder/Header.module.css";
 import Logo from "../Pictures/stir-fry.png";
-import { Routes, Route, NavLink, useLocation } from "react-router-dom";
-import Test  from "./Home";
-import Pershi from "./Pershi";
-import Drugi from "./Drugi";
-import Deserty from "./Deserts"
-import Contacts from "./Contacts";
+import { NavLink, useLocation } from "react-router-dom";
+
 const Header = () => {
   const location = useLocation()
   return (
@@ -46,13 +42,6 @@ const Header = () => {
           </div>
         </div>
       </div>
-      <Routes>
-        <Route path="/" element={<Test />}></Route>
-        <Route path="/pershi-stravy" element={<Pershi />}></Route>
-        <Route path="/drugi-stravy" element={<Drugi />}></Route>
-        <Route path="/deserty" element={<Deserty />}></Route>
-        <Route path="/contacty" element={<Contacts />}></Route>
-      </Routes>
     </>
   );
 };

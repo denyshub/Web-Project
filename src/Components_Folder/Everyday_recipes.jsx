@@ -8,8 +8,15 @@ import Deruny from "../Pictures/Деруни.jpg";
 import Kachka from "../Pictures/Качка по-пекінськи.jpg";
 import Mlyntsi from "../Pictures/Млинці.jpeg";
 import Line from "../Pictures/Line 1.svg";
-let Food_List = [Olivie, Sharlotka, Shuba, Deruny, Kachka];
-const Everyday_Recipes = () => {
+
+function EveryDay_Map_Function(recipes){
+return  recipes.filter(recipe => recipe.everyday == 1).map((recipe) => (
+  <Recipe Image={recipe.image} Name={recipe.name} Time = {recipe.time} Difficulty= {recipe.difficulty}/>
+));
+
+}
+const Everyday_Recipes = (props) => {
+  debugger
   return (
     <div className={styles.EveryDay_Container_Aligner}>
       <div className={styles.EveryDay_Container}>
@@ -20,12 +27,8 @@ const Everyday_Recipes = () => {
           </div>
         </div>
         <div className={styles.Recipes_Container}>
-          <Recipe Image={Sharlotka} Name="Шарлотка" Time = '30' Difficulty= 'Середнє'/>
-          <Recipe Image={Deruny} Name="Деруни" Time = '10' Difficulty= 'Легко'/>
-          <Recipe Image={Kachka} Name="Качка по-пекінськи" Time = '40' Difficulty= 'Середнє'/>
-          <Recipe Image={Olivie} Name="Олів'є" Time = '15' Difficulty= 'Легко'/>
-          <Recipe Image={Shuba} Name="Оселедець під шубою" Time = '45' Difficulty= 'Середнє'/>
-          <Recipe Image={Mlyntsi} Name="Млинці" Time = '3' Difficulty= 'Легко'/>
+
+        {EveryDay_Map_Function(props.Data)}
         </div>
       </div>
     </div>

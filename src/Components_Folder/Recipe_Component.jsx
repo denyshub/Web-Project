@@ -2,10 +2,14 @@ import React from "react";
 import styles from "../Styles_Folder/Recipe.module.css";
 import Liner from "../Pictures/line-xl-svgrepo-com.svg";
 import { NavLink } from "react-router-dom";
+import transliterateUkrainianToLatin from "./Tramsliteration";
+
+
 const Recipe = (props) => {
+
   return (
     <div className={styles.Recipe_Container}>
-      <NavLink className={styles.Link}>
+      <NavLink className={styles.Link} to = {transliterateUkrainianToLatin(props.Name)}>
         <img src={props.Image} className={styles.Image_Style}></img>
         <div>
           <h1 className={styles.Name_Style}>{props.Name}</h1>

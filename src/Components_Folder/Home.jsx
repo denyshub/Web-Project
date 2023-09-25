@@ -9,7 +9,7 @@ import Background from "../Pictures/background.jpg";
 import Under_Image_Menu from "./Under_Image_Menu";
 import Lines from "../Pictures/lines.svg";
 import Liner_Black from "../Pictures/Line 2.svg";
-const Home = () => {
+const Home = (props) => {
   return (
     <div className={styles.Text_Menu_Aligner}>
       <div>
@@ -49,7 +49,7 @@ const Home = () => {
       {/* <div className={styles.Liner_Black}>
         <img src={Liner_Black} width="101%"></img>
       </div> */}
-      <Everyday_Recipes />
+      <Everyday_Recipes Data = {props.Data}/>
     </div>
   );
 };
