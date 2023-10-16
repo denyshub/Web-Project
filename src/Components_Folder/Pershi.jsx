@@ -1,7 +1,10 @@
 import React from "react";
+import Category_Page from "./Template_Catrgory_Page";
 
 const Pershi = () => {
-  return <h1>Pershi stravy page</h1>
-}
+  return <>
+  <Category_Page Category = 'Перші страви'/>
+ </>
+};
 
-export default Pershi
+export default Pershi;

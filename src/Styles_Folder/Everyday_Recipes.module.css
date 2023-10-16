@@ -22,12 +22,13 @@ height: 130px;
   height: auto;
   flex-wrap: wrap;
 justify-content:space-around;
-padding-bottom: 100px;
+margin-bottom: 100px;
 }
 
 .EveryDay_Container_Aligner{
 display: flex;
 justify-content: center;
+
 }
 
 .Line_Container{

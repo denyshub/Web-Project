@@ -55,6 +55,11 @@ const Recipe_Page = (props) => {
           </div>
         </div>
       </div>
+      <div className={styles.Additional_Info_Container}>
+        <div className={styles.Additional_Title}>Додаткова інформація</div>
+        <div className={styles.Additional_Text}> <p>{props.Additional}</p></div>
+       
+      </div>
       <div className={styles.Steps_Text}>
         <h1>Кроки</h1>
       </div>

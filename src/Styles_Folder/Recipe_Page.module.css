@@ -120,7 +120,7 @@
   transition: all 0.3s ease;
   border-radius: 50px;
   padding: 20px;
-  filter: blur(2px);
+  filter: blur(4px);
 }
 h2 {
   filter: blur(0px);
@@ -169,3 +169,29 @@ h2 {
   font-size: 1.47rem;
 }
 
+.Additional_Title{
+  color: #fc2947;
+  height: 40px;
+  width: 100%;
+  padding-top:150px;
+  font-size: 3rem;
+  justify-content: center;
+  font-family: "Caveat", cursive;
+  display: flex;
+  align-items: center;
+}
+
+.Additional_Info_Container{
+  width: 100%;
+}
+
+.Additional_Text{
+  font-family: "Croissant One", cursive;
+  font-size: 2rem;
+width:95%;
+padding-left: 4%;
+}
+
+p {
+  text-indent: 40px; /* Перший рядок буде зміщений на 20px */
+}

@@ -1,0 +1,11 @@
+import React from 'react';
+import HeadStyles from "../styles/Header.module.css";
+
+const Header = () => {
+  return <div className = {HeadStyles.HeadBackground}>
+  
+    </div>
+
+};
+
+export default Header;

@@ -69,8 +69,7 @@ const ukrainianToLatinMap = {
   'Я': 'Ya',
 };
 function transliterateUkrainianToLatin(text) {
- 
-
+  
   return text.split('').map(char => ukrainianToLatinMap[char] || char).join('');
 }
 export default transliterateUkrainianToLatin

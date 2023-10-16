@@ -5,9 +5,9 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-top: 0;
-position: fixed;
-z-index: 1000;
+  top: 0;
+  position: fixed;
+  z-index: 1000;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
 }
 .Logo_Style {
@@ -47,12 +47,11 @@ z-index: 1000;
   color: #bb2525;
   margin: 0;
   padding: 0;
-  transition: text-decoration 0.3s ease-in-out; 
+  transition: text-decoration 0.3s ease-in-out;
 }
 .Link_Nav:hover {
   text-decoration: underline;
   color: black;
-  
 }
 .Buttons_Container {
   width: 50%;
@@ -98,12 +97,8 @@ z-index: 1000;
   justify-content: space-around;
 }
 
-.active_link{
-  text-decoration: underline!important
-}
 
-
-.ActiveLink{
+.ActiveLink {
   color: #000;
   text-decoration: underline;
 }

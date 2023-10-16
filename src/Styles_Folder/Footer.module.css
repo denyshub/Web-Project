@@ -1,0 +1,8 @@
+.Footer_Background {
+  left: 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: 500px; /* Встановіть висоту футера залежно від ваших потреб */
+  background-color: green; /* Це тільки приклад, встановіть кольори згідно вашого дизайну */
+}

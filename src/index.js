@@ -4,11 +4,12 @@ import "./index.css";
 import App from "./App";
 import Header from "./Components_Folder/Header";
 import { BrowserRouter } from "react-router-dom";
-import {Recipes} from './state'
+import { Recipes } from "./state";
+import Footer from "./Components_Folder/Footer"
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
   <BrowserRouter>
-    <Header />, <App Data = {Recipes.Data}/>
+    <App Data={Recipes.Data} />  
   </BrowserRouter>
 );
