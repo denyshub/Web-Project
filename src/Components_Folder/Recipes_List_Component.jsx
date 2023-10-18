@@ -11,7 +11,7 @@ const Recipe_List = (props) => {
           <div className={styles.Everyday_Text_Aligner}>
             <h1 className={styles.Everyday_Text}>{props.Text}</h1>
             <div className={styles.Line_Container}>
-              <img src={Line} width="400px" className={styles.Line}></img>
+              <img src={Line} width="200px" className={styles.Line}></img>
             </div>
           </div>
           <div className={styles.Recipes_Container}>

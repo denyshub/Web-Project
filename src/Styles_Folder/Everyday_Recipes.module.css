@@ -3,14 +3,18 @@
   font-size: 3rem;
   text-align: left ;
   color:#fc2947 ;
+  width: 350px;
   height: 20px;
 }
 
 .Everyday_Text_Aligner{
-  width: 50%;
+  width: 20%;
   padding-left: 100px;
   margin-top: 200px;
 height: 130px;
+display: flex;
+align-items: center;
+flex-direction: column;
 }
 
 .Recipes_Container{
@@ -18,7 +22,7 @@ height: 130px;
   width: 1500px;
   display: flex;
   flex-direction: row;
-  gap: 5rem;
+  gap: 4rem;
   height: auto;
   flex-wrap: wrap;
 justify-content:space-around;

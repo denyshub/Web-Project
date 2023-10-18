@@ -11,51 +11,53 @@ import Lines from "../../Pictures/lines.svg";
 import Liner_Black from "../../Pictures/Line 2.svg";
 import Footer from "../Footer";
 const Home = (props) => {
-  return (<>
-    <div className={styles.Full_Home_Page}>
-
-      <div className={styles.Text_Menu_Aligner}>
-        <div>
-          <img className={styles.Background_Image} src={Background}></img>
-        </div>
-        <div className={styles.Main_Text_Container}>
-          <div className={styles.Main_Text}>
-            <h1>Рецепти перших і других страв, а також десертів.</h1>
+  return (
+    <>
+      <div className={styles.Full_Home_Page}>
+        <div className={styles.Text_Menu_Aligner}>
+          <div>
+            <img className={styles.Background_Image} src={Background}></img>
           </div>
-          <div className={styles.Secondary_Text}>
-            <h1>
-              Безліч ідей, що приготувати на сніданок, обід чи вечерю. Дивіться,
-              надихайтеся, готуйте.
-            </h1>
+          <div className={styles.Main_Text_Container}>
+            <div className={styles.Main_Text}>
+              <h1>Рецепти перших і других страв, а також десертів.</h1>
+            </div>
+            <div className={styles.Secondary_Text}>
+              <h1>
+                Безліч ідей, що приготувати на сніданок, обід чи вечерю.
+                Дивіться, надихайтеся, готуйте.
+              </h1>
+            </div>
           </div>
-        </div>
-        <div className={styles.Question_Box}>
-          <h1>Що приготуємо сьогодні?</h1>
-        </div>
-        <div className={styles.Lines_Container}>
-          <img src={Lines} width="400px"></img>
-        </div>
-        <div className={styles.Food_Menu}>
-          <Food_Menu
-            Food_Photo={First}
-            Food_Name="Перші страви"
-            Link="/pershi-stravy"
-          />
-          <Food_Menu
-            Food_Photo={Second}
-            Food_Name="Другі страви"
-            Link="/drugi-stravy"
-          />
-          <Food_Menu Food_Photo={Desert} Food_Name="Десерти" Link="/deserty" />
-        </div>
-        <Under_Image_Menu />
+          <div className={styles.Question_Box}>
+            <h1>Що приготуємо сьогодні?</h1>
+          </div>
+          <div className={styles.Lines_Container}>
+            <img src={Lines} width="400px"></img>
+          </div>
+          <div className={styles.Food_Menu}>
+            <Food_Menu
+              Food_Photo={First}
+              Food_Name="Перші страви"
+              Link="/pershi-stravy"
+            />
+            <Food_Menu
+              Food_Photo={Second}
+              Food_Name="Другі страви"
+              Link="/drugi-stravy"
+            />
+            <Food_Menu
+              Food_Photo={Desert}
+              Food_Name="Десерти"
+              Link="/deserty"
+            />
+          </div>
+          <Under_Image_Menu />
 
-        <Everyday_Recipes Data={props.Data} />
+          <Everyday_Recipes Data={props.Data} />
+        </div>
       </div>
-
-    </div>
-  
-      </>
+    </>
   );
 };
 

@@ -29,7 +29,6 @@ const Everyday_Recipes = (props) => {
         Category={EveryDay_Map_Function(props.Data)}
         Text="Популярні рецепти"
       />
-      <Footer />
     </>
   );
 };

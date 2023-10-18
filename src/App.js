@@ -14,12 +14,59 @@ import Footer from "./Components_Folder/Footer";
 function App(props) {
   return (
     <>
-      <Header/>
+      <Header />
       <Routes>
         <Route path="/" element={<Home Data={props.Data} />}></Route>
-        <Route path="/pershi-stravy" element={<Category_Page Data = {props.Data} Category = "Перші страви" Text = "Перші страви"/>}></Route>
-        <Route path="/drugi-stravy" element={<Category_Page Data = {props.Data} Category = "Другі страви" Text = "Другі страви"/>}></Route>
-        <Route path="/deserty" element={<Category_Page Data = {props.Data} Category = "Десерти" Text = "Десерти"/>}></Route>
+        <Route
+          path="/pershi-stravy"
+          element={
+            <Category_Page
+              Data={props.Data}
+              Category="Перші страви"
+              Text="Перші страви"
+            />
+          }
+        ></Route>
+        <Route
+          path="/drugi-stravy"
+          element={
+            <Category_Page
+              Data={props.Data}
+              Category="Другі страви"
+              Text="Другі страви"
+            />
+          }
+        ></Route>
+        <Route
+          path="/deserty"
+          element={
+            <Category_Page
+              Data={props.Data}
+              Category="Десерти"
+              Text="Десерти"
+            />
+          }
+        ></Route>
+         <Route
+          path="/salaty"
+          element={
+            <Category_Page
+              Data={props.Data}
+              Category="Салати"
+              Text="Салати"
+            />
+          }
+        ></Route>
+         <Route
+          path="/sousy"
+          element={
+            <Category_Page
+              Data={props.Data}
+              Category="Соуси"
+              Text="Соуси"
+            />
+          }
+        ></Route>
         <Route path="/contacty" element={<Recipe_Page />}></Route>
         {props.Data.map((Recipe) => (
           <Route
@@ -32,13 +79,13 @@ function App(props) {
                 Image={Recipe.image}
                 Ingredients={Recipe.ingredients}
                 Steps={Recipe.steps}
-                Additional = {Recipe.additional}
+                Additional={Recipe.additional}
               />
             }
           />
         ))}
       </Routes>
-     
+      
     </>
   );
 }
