@@ -1,0 +1,82 @@
+.Suggest_Text{
+  padding-top: 70px;
+  overflow: hidden;
+  font-family: "Caveat", cursive;
+  text-align: center;
+  font-size: 2rem;
+  color: black;
+
+
+  
+}
+.Suggest_Text h1{
+
+  margin-right: 300px;
+}
+.Suggest_Text h2{
+  color: #272727;
+  margin-left: 300px;
+}
+
+.Page_Aligner{
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.Socials_Text{
+  font-family: "Caveat", cursive;
+  margin-left: 100px;
+  color:  #fc2947;
+padding-top: 30px;
+  font-size: 2rem;
+  width: fit-content;
+}
+
+.Icons_Menu{
+  padding-top: 30px;
+  display: flex;
+  justify-content: center;
+padding-right: 100px;
+}
+
+.Line_Aligner{
+  display: flex;
+ 
+  flex-direction: column;
+}
+.Line{
+  margin-left: 120px;
+  position: absolute;
+  top:600px
+}
+.Border_Socials{
+  font-size: 5.5rem;
+  color:  black;
+  display: flex;
+  gap: 5%;
+  color: #fc2947;
+
+width: fit-content;
+}
+.Div{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+justify-content: center;
+gap: 50px;
+
+}
+.Lines{
+  width: 95%;
+
+padding-top: 100px;
+  margin-left: 50px;
+}
+
+.Lines1{
+  padding-top: 100px;
+  width: 100%;
+  margin-right: 50px;
+}

@@ -67,7 +67,7 @@ function App(props) {
             />
           }
         ></Route>
-        <Route path="/contacty" element={<Recipe_Page />}></Route>
+        <Route path="/contacty" element={<Contacts />}></Route>
         {props.Data.map((Recipe) => (
           <Route
             exact

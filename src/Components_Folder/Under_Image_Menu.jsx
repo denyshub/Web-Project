@@ -11,7 +11,7 @@ const Food_Icon = (props) => {
     <div className={styles.Underlined_Div}>
       {" "}
       <NavLink to={props.Link} className={styles.Menu_Link_Style}>
-        <img src={props.Image} width="150" height="150"></img>{" "}
+        <img src={props.Image} className={styles.Icon_Size}></img>{" "}
         <h1 className={styles.Menu_Text}>{props.Text}</h1>
       </NavLink>
     </div>

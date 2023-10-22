@@ -1,40 +1,68 @@
-.Everyday_Text{
-  font-family: 'Caveat', cursive;
+.Everyday_Text {
+  font-family: "Caveat", cursive;
   font-size: 3rem;
-  text-align: left ;
-  color:#fc2947 ;
-  width: 350px;
+  text-align: left;
+  color: #fc2947;
+  max-width: 360px;
+  min-width: fit-content;
   height: 20px;
 }
 
-.Everyday_Text_Aligner{
+.Everyday_Text_Aligner {
   width: 20%;
-  padding-left: 100px;
+  margin-left: 100px;
   margin-top: 200px;
-height: 130px;
-display: flex;
-align-items: center;
-flex-direction: column;
+  height: 130px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.Recipes_Container{
-  
+.Recipes_Container {
   width: 1500px;
   display: flex;
   flex-direction: row;
-  gap: 4rem;
+  
   height: auto;
   flex-wrap: wrap;
-justify-content:space-around;
-margin-bottom: 100px;
+gap:4%;
+  margin-bottom: 100px;
+}
+.evenly{
+  justify-content: space-between;
+}
+.start{
+  justify-content: start;
+}
+.EveryDay_Container_Aligner {
+  display: flex;
+  justify-content: center;
 }
 
-.EveryDay_Container_Aligner{
-display: flex;
-justify-content: center;
-
+.Line_Container {
+  margin-bottom: 20px;
 }
 
-.Line_Container{
-margin-bottom: 20px;
+.Everyday_Text_Main {
+  font-family: "Caveat", cursive;
+  font-size: 3rem;
+  text-align: left;
+  color: #fc2947;
+  width: 350px;
+
+  height: 20px;
+}
+
+.EveryDay_Container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.Center_Aligner{
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }

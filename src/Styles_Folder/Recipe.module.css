@@ -13,10 +13,11 @@ height: 200px;
 border-radius: 20px;
 }
 
-.Recipe_Container{width: 25rem;
+.Recipe_Container{width: 30.65%;
   transition: all 0.3s ease;
   border-radius: 20px;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  margin-bottom: 40px;
 }
 
 .Recipe_Container:hover{

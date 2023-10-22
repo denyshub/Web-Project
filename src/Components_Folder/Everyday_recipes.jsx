@@ -10,6 +10,8 @@ import Mlyntsi from "../Pictures/Млинці.jpeg";
 
 import Footer from "./Footer";
 import Recipe_List from "./Recipes_List_Component";
+
+
 function EveryDay_Map_Function(recipes) {
   return recipes
     .filter((recipe) => recipe.everyday == 1)
@@ -28,6 +30,7 @@ const Everyday_Recipes = (props) => {
       <Recipe_List
         Category={EveryDay_Map_Function(props.Data)}
         Text="Популярні рецепти"
+        StyleName = "Everyday_Text_Main"
       />
     </>
   );

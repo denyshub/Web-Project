@@ -21,6 +21,7 @@ const Category_Page = (props) => {
       <Recipe_List
         Category={Stravy_Map(props.Data, props.Category)}
         Text={props.Text}
+        StyleName = "Everyday_Text"
       />
     </>
   );
