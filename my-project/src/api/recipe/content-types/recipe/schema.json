@@ -1,0 +1,57 @@
+{
+  "kind": "collectionType",
+  "collectionName": "recipes",
+  "info": {
+    "singularName": "recipe",
+    "pluralName": "recipes",
+    "displayName": "recipe",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "steps": {
+      "type": "text"
+    },
+    "time": {
+      "type": "integer"
+    },
+    "additional": {
+      "type": "text"
+    },
+    "ingridients": {
+      "type": "text"
+    },
+    "everyday": {
+      "type": "boolean"
+    },
+    "difficulty": {
+      "type": "string"
+    },
+    "key": {
+      "type": "integer"
+    },
+    "category": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::category.category",
+      "inversedBy": "recipes"
+    }
+  }
+}
