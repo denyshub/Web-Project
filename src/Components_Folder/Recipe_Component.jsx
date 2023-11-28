@@ -10,7 +10,7 @@ const Recipe = (props) => {
   return (
     <div className={styles.Recipe_Container}>
       <NavLink className={styles.Link} to = {"/recipe/"+transliterateUkrainianToLatin(props.Name)}>
-        <img src={props.Image} className={styles.Image_Style}></img>
+        <img src={`http://localhost:1337${props.Image}`} className={styles.Image_Style}></img>
         <div>
           <h1 className={styles.Name_Style}>{props.Name}</h1>
         </div>

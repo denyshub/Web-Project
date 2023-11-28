@@ -8,6 +8,7 @@ import { Recipes } from "./state";
 import Footer from "./Components_Folder/Footer"
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
+
 root.render(
   <BrowserRouter>
     <App Data={Recipes.Data} />  

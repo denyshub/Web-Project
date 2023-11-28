@@ -1,7 +1,8 @@
 .Header_Background {
   width: 100%;
+ left: 0;
   height: 70px;
-  background-color: #faf3f0;
+  background-color: white;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -30,7 +31,6 @@
   width: 150px;
 }
 .Logo_Container {
-
   font-size: 35px;
   color: #fc2947;
   width: 15%;
@@ -97,8 +97,48 @@
   justify-content: space-around;
 }
 
-
 .ActiveLink {
   color: #000;
   text-decoration: underline;
+}
+
+.Search_Container {
+  max-width: 0;
+  transition: max-width 0.2s ease-in-out;
+
+}
+
+
+.Search_Container.active {
+  max-width: 200px; /* або будь-яке інше значення, яке вам підходить */
+}
+
+.None {
+  max-width: 0;
+  box-shadow: 0 0 0px rgba(68, 4, 4, 0.5);
+    overflow: hidden;
+}
+
+.SearchButton {
+  border: none;
+  background-color: white;
+  font-size: 1em;
+  color: #bb2525;
+  transition: ease-in-out 0.2s;
+  border-radius: 50%;
+ width: 40px;
+ margin-left: 5px;
+}
+.SearchButton:hover {
+  transition: ease-in-out 0.2s;
+  color: black;
+}
+.Input_Box {
+  width: 80px;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 0 2px rgba(68, 4, 4, 0.5);
+  border: none;
+  margin-left: 70px;
+  margin-top: 5px;
 }

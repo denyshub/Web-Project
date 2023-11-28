@@ -1,24 +1,14 @@
 import React, { useState, useEffect } from "react";
 import styles from "../Styles_Folder/Recipe_Page.module.css";
-import test_image from "../Pictures/Деруни.jpg";
 import Ingr_Icon from "../Pictures/ingr-icon.svg";
 import Lines from "../Pictures/lines.svg";
 import Line from "../Pictures/Line_page.svg";
-
-
+import GetLabel from "./GetLabel";
 const Recipe_Page = (props) => {
-  useEffect(() => {
-    window.scrollTo(0, 0); // Прокручуємо до верху сторінки при завантаженні цієї сторінки
-  }, []);
+  const stepsArray = props.Steps.split(";");
+  const [stepStatus, setStepStatus] = useState(stepsArray.map(() => false));
 
-  const ingredientsString = props.Ingredients;
-  const ingredientsArray = ingredientsString.split(";");
-
-  const stepsString = props.Steps;
-  const stepssArray = stepsString.split(";");
-
-
-  const [stepStatus, setStepStatus] = useState(stepssArray.map(() => false));
+  const ingredientsArray = props.Ingredients.split(";");
 
   function Checked_Label(index) {
     setStepStatus((prevStatus) => {
@@ -27,12 +17,16 @@ const Recipe_Page = (props) => {
       return updatedStatus;
     });
   }
-
+  useEffect(() => {
+    window.scrollTo(0, 0); // Прокручуємо до верху сторінки при завантаженні цієї сторінки
+  }, []);
+const Label1 = GetLabel(24)
+const Label2 = GetLabel(25)
   return (
     <div>
       <div className={styles.Underlined_Name}>
         <div className={styles.Food_Name}>
-          <h1>{props.Name}</h1>{" "}
+          <h1>{props.Name}</h1>
         </div>
         <div className={styles.Line}>
           <img src={Lines} width="400px" className={styles.Line}></img>
@@ -40,14 +34,17 @@ const Recipe_Page = (props) => {
       </div>
       <div className={styles.Image_Ingredients_Box}>
         <div className={styles.Image_Box}>
-          <img src={props.Image} className={styles.Main_Image_Style}></img>
+          <img
+            src={`http://localhost:1337${props.Image}`}
+            className={styles.Main_Image_Style}
+            alt={props.Name}
+          ></img>
         </div>
         <div className={styles.Ingredients}>
           <div className={styles.Ing_Header}>
-            <img src={Ingr_Icon} width="60px"></img>
-            <p>Інгрідієнти</p>
+            <img src={Ingr_Icon} width="60px" alt="Ingredients Icon"></img>
+            <p>{Label1}</p>
           </div>
-
           <div className={styles.Ing_List}>
             {ingredientsArray.map((ingredient, index) => (
               <li key={index}>{ingredient}</li>
@@ -56,9 +53,11 @@ const Recipe_Page = (props) => {
         </div>
       </div>
       <div className={styles.Additional_Info_Container}>
-        <div className={styles.Additional_Title}>Додаткова інформація</div>
-        <div className={styles.Additional_Text}> <p>{props.Additional}</p></div>
-       
+        <div className={styles.Additional_Title}>{Label2}</div>
+        <div className={styles.Additional_Text}>
+          {" "}
+          <p>{props.Additional}</p>
+        </div>
       </div>
       <div className={styles.Steps_Text}>
         <h1>Кроки</h1>
@@ -68,7 +67,7 @@ const Recipe_Page = (props) => {
       </div>
       <div className={styles.Steps_Box}>
         <div className={styles.Steps_Container}>
-          {stepssArray.map((step, index) => (
+          {stepsArray.map((step, index) => (
             <div
               className={
                 stepStatus[index]

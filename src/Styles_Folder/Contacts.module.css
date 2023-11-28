@@ -9,6 +9,7 @@
 
   
 }
+
 .Suggest_Text h1{
 
   margin-right: 300px;
@@ -19,6 +20,7 @@
 }
 
 .Page_Aligner{
+  margin-top: 100px;
   display: flex;
   flex-direction: column;
   
@@ -51,13 +53,20 @@ padding-right: 100px;
   top:600px
 }
 .Border_Socials{
-  font-size: 5.5rem;
-  color:  black;
+
+
   display: flex;
   gap: 5%;
-  color: #fc2947;
+
 
 width: fit-content;
+}
+body{
+  background-color: #FDF4F5;
+}
+.Soicals_Link{
+  font-size: 4rem;
+  color: #fc2947;
 }
 .Div{
   display: flex;

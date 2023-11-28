@@ -8,9 +8,19 @@ import Desert from "../../Pictures/Десерти.jpg";
 import Background from "../../Pictures/background.jpg";
 import Under_Image_Menu from "../Under_Image_Menu";
 import Lines from "../../Pictures/lines.svg";
-import Liner_Black from "../../Pictures/Line 2.svg";
-import Footer from "../Footer";
-const Home = (props) => {
+import GetLabel from "../GetLabel";
+
+
+const Home = ({ Data }) => {
+  console.log(Data);
+  const label1 = GetLabel(1);
+  const label2 = GetLabel(2);
+  const label3 = GetLabel(3);
+  const label4 = GetLabel(4);
+  const label5 = GetLabel(5);
+  const Pershi = GetLabel(6)
+  const Drugi = GetLabel(7)
+  const Deserts = GetLabel(8)
   return (
     <>
       <div className={styles.Full_Home_Page}>
@@ -20,17 +30,14 @@ const Home = (props) => {
           </div>
           <div className={styles.Main_Text_Container}>
             <div className={styles.Main_Text}>
-              <h1>Рецепти перших і других страв, а також десертів.</h1>
+              <h1>{label1}</h1>
             </div>
             <div className={styles.Secondary_Text}>
-              <h1>
-                Безліч ідей, що приготувати на сніданок, обід чи вечерю.
-                Дивіться, надихайтеся, готуйте.
-              </h1>
+              <h1>{label2}</h1>
             </div>
           </div>
           <div className={styles.Question_Box}>
-            <h1>Що приготуємо сьогодні?</h1>
+            <h1>{label3}</h1>
           </div>
           <div className={styles.Lines_Container}>
             <img src={Lines} width="400px"></img>
@@ -38,23 +45,23 @@ const Home = (props) => {
           <div className={styles.Food_Menu}>
             <Food_Menu
               Food_Photo={First}
-              Food_Name="Перші страви"
+              Food_Name={Pershi}
               Link="/pershi-stravy"
             />
             <Food_Menu
               Food_Photo={Second}
-              Food_Name="Другі страви"
+              Food_Name={Drugi}
               Link="/drugi-stravy"
             />
             <Food_Menu
               Food_Photo={Desert}
-              Food_Name="Десерти"
+              Food_Name={Deserts}
               Link="/deserty"
             />
           </div>
-          <Under_Image_Menu />
+          <Under_Image_Menu Label = {label4} />
 
-          <Everyday_Recipes Data={props.Data} />
+          <Everyday_Recipes Data={Data} Label = {label5} />
         </div>
       </div>
     </>

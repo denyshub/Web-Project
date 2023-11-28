@@ -1,4 +1,5 @@
-body{
-  background-color: #FDF4F5;
+
+body {
+
+  background-color: #FDF4F5; /* Ширина вертикальної полоси прокрутки у більшості браузерів */
 }
-*{}

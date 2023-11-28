@@ -3,15 +3,24 @@
   font-size: 3rem;
   text-align: left;
   color: #fc2947;
-  max-width: 360px;
+  max-width: 500px;
   min-width: fit-content;
   height: 20px;
 }
+.Everyday_Text_Search {
+  font-family: "Caveat", cursive;
+  font-size: 3rem;
 
+  color: #fc2947;
+
+  width: 600px;
+  margin-left: 300px;
+  height: 20px;
+}
 .Everyday_Text_Aligner {
   width: 20%;
   margin-left: 100px;
-  margin-top: 200px;
+  margin-top: 100px;
   height: 130px;
   display: flex;
   align-items: center;
@@ -23,16 +32,16 @@
   width: 1500px;
   display: flex;
   flex-direction: row;
-  
+
   height: auto;
   flex-wrap: wrap;
-gap:4%;
+  gap: 4%;
   margin-bottom: 100px;
 }
-.evenly{
+.evenly {
   justify-content: space-between;
 }
-.start{
+.start {
   justify-content: start;
 }
 .EveryDay_Container_Aligner {
@@ -54,14 +63,13 @@ gap:4%;
   height: 20px;
 }
 
-.EveryDay_Container{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    
+.EveryDay_Container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
-.Center_Aligner{
+.Center_Aligner {
   width: 100%;
   display: flex;
   justify-content: center;
