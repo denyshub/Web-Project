@@ -1,35 +1,59 @@
-.Food_Text{
-  font-family: "Croissant One", cursive;
-  text-decoration: none;
-  color: black ;
-  text-align: center;
-  font-size: 1.5rem;
-  display: flex;
-  flex-direction: column-reverse;
+
+
+@media only screen and (max-width: 600px) {
+  .Photo_Text_Container {
+    width: 33%;
+    border-radius: 0px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .Food_Photo {
+    width: 100%;
+  }
+  .Food_Text {
+    font-family: "Croissant One", cursive;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }
 
-.Photo_Text_Container{
-
-  width: 25rem;
-  margin-top: 100px;
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
-  border-radius: 20px;
-  display: flex;
-  flex-direction: column;
-}
-
-.Photo_Text_Container img {
-  border-radius: 20px;
-  transition: filter 0.7s ease;
-}
-.Photo_Text_Container img:hover {
-  filter: brightness(90%);
-}
-.Photo_Text_Container a:hover{
-
-  color: grey;
-}
-.Photo_Text_Container a{
-  transition: all 0.3s ease;
+@media only screen and (min-width: 1025px) {
+  .Photo_Text_Container {
+    width: 25rem;
+    margin-top: 100px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  .Food_Text {
+    font-family: "Croissant One", cursive;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .Photo_Text_Container img {
+    border-radius: 20px;
+    transition: filter 0.7s ease;
+  }
+  .Photo_Text_Container img:hover {
+    filter: brightness(90%);
+  }
+  .Photo_Text_Container a:hover {
+    color: grey;
+  }
+  .Photo_Text_Container a {
+    transition: all 0.3s ease;
+  }
 }
 

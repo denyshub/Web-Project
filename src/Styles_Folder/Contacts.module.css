@@ -1,91 +1,196 @@
-.Suggest_Text{
-  padding-top: 70px;
-  overflow: hidden;
-  font-family: "Caveat", cursive;
-  text-align: center;
-  font-size: 2rem;
-  color: black;
 
-
+@media only screen and (min-width: 1025px) {
+  .Suggest_Text{
+    padding-top: 70px;
+    overflow: hidden;
+    font-family: "Caveat", cursive;
+    text-align: center;
+    font-size: 2rem;
+    color: black;
   
-}
-
-.Suggest_Text h1{
-
-  margin-right: 300px;
-}
-.Suggest_Text h2{
-  color: #272727;
-  margin-left: 300px;
-}
-
-.Page_Aligner{
-  margin-top: 100px;
-  display: flex;
-  flex-direction: column;
   
-}
-
-.Socials_Text{
-  font-family: "Caveat", cursive;
-  margin-left: 100px;
-  color:  #fc2947;
-padding-top: 30px;
-  font-size: 2rem;
-  width: fit-content;
-}
-
-.Icons_Menu{
+    
+  }
+  
+  .Suggest_Text h1{
+  
+    margin-right: 300px;
+  }
+  .Suggest_Text h2{
+    color: #272727;
+    margin-left: 300px;
+  }
+  
+  .Page_Aligner{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    
+  }
+  
+  .Socials_Text{
+    font-family: "Caveat", cursive;
+    margin-left: 100px;
+    color:  #fc2947;
   padding-top: 30px;
-  display: flex;
+    font-size: 2rem;
+    width: fit-content;
+  }
+  
+  .Icons_Menu{
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+  padding-right: 100px;
+  }
+  
+  .Line_Aligner{
+    display: flex;
+   
+    flex-direction: column;
+  }
+  .Line{
+    margin-left: 120px;
+    position: absolute;
+    top:600px
+  }
+  .Border_Socials{
+  
+  
+    display: flex;
+    gap: 5%;
+  
+  
+  width: fit-content;
+  }
+  body{
+    background-color: #FDF4F5;
+  }
+  .Soicals_Link{
+    font-size: 4rem;
+    color: #fc2947;
+  }
+  .Div{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
   justify-content: center;
-padding-right: 100px;
-}
-
-.Line_Aligner{
-  display: flex;
- 
-  flex-direction: column;
-}
-.Line{
-  margin-left: 120px;
-  position: absolute;
-  top:600px
-}
-.Border_Socials{
-
-
-  display: flex;
-  gap: 5%;
-
-
-width: fit-content;
-}
-body{
-  background-color: #FDF4F5;
-}
-.Soicals_Link{
-  font-size: 4rem;
-  color: #fc2947;
-}
-.Div{
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  align-items: center;
-justify-content: center;
-gap: 50px;
-
-}
-.Lines{
-  width: 95%;
-
-padding-top: 100px;
-  margin-left: 50px;
-}
-
-.Lines1{
+  gap: 50px;
+  
+  }
+  .Lines{
+    width: 95%;
+  
   padding-top: 100px;
-  width: 100%;
-  margin-right: 50px;
+    margin-left: 50px;
+  }
+  
+  .Lines1{
+    padding-top: 100px;
+    width: 100%;
+    margin-right: 50px;
+  }
+}
+
+
+@media only screen and (max-width: 600px) {
+  .Suggest_Text{
+    padding-top: 30px;
+    overflow: hidden;
+    font-family: "Caveat", cursive;
+    text-align: center;
+    font-size: 1rem;
+    color: black;
+  
+  
+    
+  }
+  
+  .Suggest_Text h1{
+  
+    margin-right: 80px;
+  }
+  .Suggest_Text h2{
+    color: #272727;
+    margin-left: 200px;
+  }
+  
+  .Page_Aligner{
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    
+  }
+  
+  .Socials_Text{
+    font-family: "Caveat", cursive;
+ 
+    color:  #fc2947;
+  padding-top: 30px;
+    font-size: 1rem;
+    width: fit-content;
+  }
+  
+  .Icons_Menu{
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+  padding-right: 30px;
+  font-size: 20px;
+  }
+  .Icons_Menu svg{
+    width: 10px;
+  }
+  .Icons{font-size: 10px;}
+  .Line_Aligner{
+    display: flex;
+   
+    flex-direction: column;
+  }
+  .Line{
+    margin-left: 120px;
+    position: absolute;
+    top:600px
+  }
+  .Border_Socials{
+  
+  
+    display: flex;
+    gap: 5%;
+  
+  
+  width: fit-content;
+  }
+  body{
+    background-color: #FDF4F5;
+  }
+  .Soicals_Link{
+    font-size: 4rem;
+    color: #fc2947;
+  }
+  .Div{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+  justify-content: center;
+  gap: 20px;
+  
+  }
+  .Lines{
+    width: 95%;
+  
+  padding-top: 100px;
+    margin-left: 50px;
+  }
+  
+  .Lines1{
+    padding-top: 100px;
+    width: 100%;
+    margin-right: 50px;
+  }
+  .Soicals_Link{
+    font-size: 45px;
+  }
 }

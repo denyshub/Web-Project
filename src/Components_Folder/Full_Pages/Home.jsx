@@ -10,7 +10,6 @@ import Under_Image_Menu from "../Under_Image_Menu";
 import Lines from "../../Pictures/lines.svg";
 import GetLabel from "../GetLabel";
 
-
 const Home = ({ Data }) => {
   console.log(Data);
   const label1 = GetLabel(1);
@@ -18,14 +17,14 @@ const Home = ({ Data }) => {
   const label3 = GetLabel(3);
   const label4 = GetLabel(4);
   const label5 = GetLabel(5);
-  const Pershi = GetLabel(6)
-  const Drugi = GetLabel(7)
-  const Deserts = GetLabel(8)
+  const Pershi = GetLabel(6);
+  const Drugi = GetLabel(7);
+  const Deserts = GetLabel(8);
   return (
     <>
       <div className={styles.Full_Home_Page}>
         <div className={styles.Text_Menu_Aligner}>
-          <div>
+          <div className={styles.Test}>
             <img className={styles.Background_Image} src={Background}></img>
           </div>
           <div className={styles.Main_Text_Container}>
@@ -40,7 +39,7 @@ const Home = ({ Data }) => {
             <h1>{label3}</h1>
           </div>
           <div className={styles.Lines_Container}>
-            <img src={Lines} width="400px"></img>
+            <img src={Lines} className={styles.Line}></img>
           </div>
           <div className={styles.Food_Menu}>
             <Food_Menu
@@ -59,9 +58,9 @@ const Home = ({ Data }) => {
               Link="/deserty"
             />
           </div>
-          <Under_Image_Menu Label = {label4} />
+          <Under_Image_Menu Label={label4} />
 
-          <Everyday_Recipes Data={Data} Label = {label5} />
+          <Everyday_Recipes Data={Data} Label={label5} />
         </div>
       </div>
     </>

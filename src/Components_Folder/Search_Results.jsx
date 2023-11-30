@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Everyday_Recipes from "./Everyday_recipes";
 import Recipe from "./Recipe_Component";
+import styles from "../Styles_Folder/Everyday_Recipes.module.css"
 import Recipe_List from "./Recipes_List_Component";
 const Search_Results = ({ Data, Name }) => {
   const array = Data?.data || [];
@@ -16,19 +17,23 @@ const Search_Results = ({ Data, Name }) => {
     setFilteredRecipes(filteredByName);
   }, [Data, Name]);
   return (
-    <Recipe_List
-      Category={filteredRecipes.map((recipe) => (
-        <Recipe
-          key={recipe.id}
-          Image={recipe?.attributes?.image?.data?.attributes?.url}
-          Name={recipe?.attributes?.name}
-          Time={recipe?.attributes?.time}
-          Difficulty={recipe?.attributes?.difficulty}
+
+      <div className={styles.Margin_Top}>
+        <Recipe_List
+          Category={filteredRecipes.map((recipe) => (
+            <Recipe
+              key={recipe.id}
+              Image={recipe?.attributes?.image?.data?.attributes?.url}
+              Name={recipe?.attributes?.name}
+              Time={recipe?.attributes?.time}
+              Difficulty={recipe?.attributes?.difficulty}
+            />
+          ))}
+          Text={`Резултати пошуку:`}
+          StyleName="Everyday_Text_Search"
         />
-      ))}
-      Text={`Резултати пошуку:`}
-      StyleName="Everyday_Text_Search"
-    />
+      </div>
+
   );
 };
 

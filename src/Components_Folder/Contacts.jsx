@@ -24,9 +24,9 @@ const Contacts = () => {
         </div>
         <div className={styles.Icons_Menu}>
           <div className={styles.Border_Socials}>
-            <NavLink to = '/' className={styles.Soicals_Link}> <ion-icon name="logo-instagram"></ion-icon></NavLink>
-            <NavLink to = '/' className={styles.Soicals_Link}> <ion-icon name="logo-facebook"></ion-icon></NavLink>
-            <NavLink to = '/' className={styles.Soicals_Link}> <ion-icon name="mail-outline"></ion-icon></NavLink>
+            <NavLink to = '/' className={styles.Soicals_Link}> <ion-icon className={styles.Icons} name="logo-instagram"></ion-icon></NavLink>
+            <NavLink to = '/' className={styles.Soicals_Link}> <ion-icon className={styles.Icons} name="logo-facebook"></ion-icon></NavLink>
+            <NavLink to = '/' className={styles.Soicals_Link}> <ion-icon className={styles.Icons} name="mail-outline"></ion-icon></NavLink>
           
           </div>
         </div>

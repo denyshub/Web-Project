@@ -14,16 +14,20 @@ const Header = ({ setQuery }) => {
   let navigate = useNavigate();
   let location = useLocation();
   const [query, setQuery1] = useState("");
-  useEffect(()=>{
-    setSearch(0)
-  },[location])
+
+  useEffect(() => {
+    setSearch(0);
+    setNavbar(0)
+  }, [location]);
   const handleSearch = () => {
     // Pass the 'query' value to App.js
     setQuery(query);
     query ? navigate("/search-results") : setQuery(null);
     setQuery1("");
   };
- const [search, setSearch] = useState(0)
+  const [search, setSearch] = useState(0);
+  const [navbar, setNavbar] = useState(0);
+
   return (
     <>
       <div className={styles.Header_Background}>
@@ -100,10 +104,11 @@ const Header = ({ setQuery }) => {
               {Contacts}
             </NavLink>
           </div>
-          <div  className={`${styles.Search_Container} ${
+          <div
+            className={`${styles.Search_Container} ${
               search === 1 ? styles.active : styles.None
-            }`}>
-            
+            }`}
+          >
             <input
               type="text"
               value={query}
@@ -113,17 +118,97 @@ const Header = ({ setQuery }) => {
                   handleSearch();
                 }
               }}
-              
               onChange={(e) => setQuery1(e.target.value)}
               className={styles.Input_Box}
             />
           </div>
           <div className={styles.Search_Box}>
             {" "}
-            <button className={styles.SearchButton} onClick={()=>{search?setSearch(0):setSearch(1)}}>
+            <button
+              className={styles.SearchButton}
+              onClick={() => {
+                search ? setSearch(0) : setSearch(1);
+              }}
+            >
               <ion-icon name="search-outline"></ion-icon>
             </button>
           </div>
+          <div className={styles.MobileNav}>
+            <button
+              onClick={() => {
+                setNavbar(navbar ? 0 : 1);
+              }}
+              className={styles.Mob_Nav_Button}
+            >
+              <ion-icon name="menu-outline"></ion-icon>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        className={`${styles.Navbar_Mobile} ${
+          navbar === 1 ? styles.active : styles.None
+        }`}
+      >
+        <div className={styles.Mob_Nav_Line}>
+          <NavLink
+            className={
+              location.pathname === "/"
+                ? styles.ActiveLink
+                : styles.Link_Nav_Mob
+            }
+            to="/"
+          >
+            {Main}
+          </NavLink>
+        </div>
+        <div className={styles.Mob_Nav_Line}>
+          <NavLink
+            className={
+              location.pathname === "/pershi-stravy"
+                ? styles.ActiveLink
+                : styles.Link_Nav_Mob
+            }
+            to="/pershi-stravy"
+          >
+            {Pershi}
+          </NavLink>
+        </div>
+        <div className={styles.Mob_Nav_Line}>
+          <NavLink
+            className={
+              location.pathname === "/drugi-stravy"
+                ? styles.ActiveLink
+                : styles.Link_Nav_Mob
+            }
+            to="/drugi-stravy"
+          >
+            {Drugi}
+          </NavLink>
+        </div>
+        <div className={styles.Mob_Nav_Line}>
+          <NavLink
+            className={
+              location.pathname === "/deserty"
+                ? styles.ActiveLink
+                : styles.Link_Nav_Mob
+            }
+            to="/deserty"
+          >
+            {Deserts}
+          </NavLink>
+        </div>
+        <div className={styles.Mob_Nav_Line}>
+          <NavLink
+            className={
+              location.pathname === "/contacty"
+                ? styles.ActiveLink
+                : styles.Link_Nav_Mob
+            }
+            to="/contacty"
+          >
+            {Contacts}
+          </NavLink>
         </div>
       </div>
     </>

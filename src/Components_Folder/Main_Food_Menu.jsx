@@ -6,7 +6,7 @@ const Food_Menu = (props) => {
     <div className={styles.Photo_Text_Container}>
       <Link to={props.Link} className={styles.Food_Text}>
         {props.Food_Name}
-        <img src={props.Food_Photo}></img>
+        <img className = {styles.Food_Photo} src={props.Food_Photo}></img>
       </Link>
     </div>
   );

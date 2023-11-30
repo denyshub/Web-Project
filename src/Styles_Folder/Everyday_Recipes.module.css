@@ -1,76 +1,164 @@
-.Everyday_Text {
-  font-family: "Caveat", cursive;
-  font-size: 3rem;
-  text-align: left;
-  color: #fc2947;
-  max-width: 500px;
-  min-width: fit-content;
-  height: 20px;
-}
-.Everyday_Text_Search {
-  font-family: "Caveat", cursive;
-  font-size: 3rem;
+@media only screen and (min-width: 1025px) {
+  .Everyday_Text {
+    font-family: "Caveat", cursive;
+    font-size: 3rem;
+    text-align: left;
+    color: #fc2947;
+    max-width: 500px;
+    min-width: fit-content;
+    height: 20px;
+  }
+  .Everyday_Text_Search {
+    font-family: "Caveat", cursive;
+    font-size: 3rem;
 
-  color: #fc2947;
+    color: #fc2947;
 
-  width: 600px;
-  margin-left: 300px;
-  height: 20px;
-}
-.Everyday_Text_Aligner {
-  width: 20%;
-  margin-left: 100px;
-  margin-top: 100px;
-  height: 130px;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-}
+    width: 600px;
+    margin-left: 300px;
+    height: 20px;
+  }
+  .Everyday_Text_Aligner {
+    width: 20%;
+    margin-left: 100px;
+    margin-top: 100px;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
 
-.Recipes_Container {
-  width: 1500px;
-  display: flex;
-  flex-direction: row;
+  .Recipes_Container {
+    width: 1500px;
+    display: flex;
+    flex-direction: row;
 
-  height: auto;
-  flex-wrap: wrap;
-  gap: 4%;
-  margin-bottom: 100px;
-}
-.evenly {
-  justify-content: space-between;
-}
-.start {
-  justify-content: start;
-}
-.EveryDay_Container_Aligner {
-  display: flex;
-  justify-content: center;
-}
+    height: auto;
+    flex-wrap: wrap;
+    gap: 4%;
+    margin-bottom: 100px;
+  }
+  .evenly {
+    justify-content: space-between;
+  }
+  .start {
+    justify-content: start;
+  }
+  .EveryDay_Container_Aligner {
+    display: flex;
+    justify-content: center;
+  }
 
-.Line_Container {
-  margin-bottom: 20px;
+  .Line_Container {
+    margin-bottom: 20px;
+  }
+
+  .Everyday_Text_Main {
+    font-family: "Caveat", cursive;
+    font-size: 3rem;
+    text-align: left;
+    color: #fc2947;
+    width: 350px;
+
+    height: 20px;
+  }
+
+  .EveryDay_Container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .Center_Aligner {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+  }
 }
+@media only screen and (max-width: 600px) {
+  .Everyday_Text_Main {
+    font-family: "Caveat", cursive;
+    font-size: 2rem;
+    text-align: left;
+    color: #fc2947;
+    width: 350px;
 
-.Everyday_Text_Main {
-  font-family: "Caveat", cursive;
-  font-size: 3rem;
-  text-align: left;
-  color: #fc2947;
-  width: 350px;
+    height: 20px;
+  }
+  .Everyday_Text{
+    font-family: "Caveat", cursive;
+    font-size: 2rem;
+    text-align: left;
+    color: #fc2947;
+    width: 350px;
 
-  height: 20px;
-}
+    height: 10px; 
+  }
+  .Everyday_Text_Aligner {
+    width: 20%;
+    margin-left: 150px;
+    
+    height: 130px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .Line_Container {
+    margin-bottom: 20px;
+    margin-right: 150px;
+  }
+  
+  .Recipes_Container {
+    width: 1000px;
+    display: flex;
+    flex-direction: row;
+margin-left:6.5%;
+    height: auto;
+    flex-wrap: wrap;
+    gap: 5%;
+    margin-bottom: 100px;
+  }
+  .evenly {
+    justify-content: space-evenly;
+  }
+  .start {
+    justify-content: start;
+  }
+  .EveryDay_Container_Aligner {
+    display: flex;
+    justify-content: center;
+  }
 
-.EveryDay_Container {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-}
+  .Line_Container {
+    margin-bottom: 20px;
+  }
 
-.Center_Aligner {
-  width: 100%;
-  display: flex;
-  justify-content: center;
+  .Everyday_Text_Search {
+    font-family: "Caveat", cursive;
+    font-size: 2rem;
+    text-align: left;
+    color: #fc2947;
+    width: 350px;
+
+    height: 10px; 
+  
+  } 
+
+  .EveryDay_Container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .Center_Aligner {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .Margin_Top{
+    margin-top: 50px;
+  }
 }

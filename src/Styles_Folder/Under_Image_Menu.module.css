@@ -1,59 +1,111 @@
-.Menu_Horizontal_Aligner {
-  display: flex;
-  justify-content: center;
+@media only screen and (min-width: 1025px) {
+  .Menu_Horizontal_Aligner {
+    display: flex;
+    justify-content: center;
+  }
+  .Border_Box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5%;
+  
+    width: 90%;
+    height: 300px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 80px;
+  }
+  .Other_Categoties {
+    font-family: "Caveat", cursive;
+    font-size: 3rem;
+    padding-top: 150px;
+    text-align: center;
+  }
+  .Menu_Text {
+    text-align: center;
+    font-family: "Croissant One", cursive;
+    font-size: 1.8rem;
+  }
+  
+  .Underlined_Div {
+    height: 100%;
+    margin-top: 50px;
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.1s ease;
+  }
+  .Underlined_Div:hover {
+    border-bottom: 0px solid #fc2947;
+  }
+  .Menu_Link_Style {
+    text-decoration: none;
+    color: #000;
+    transition: all 0.3s ease;
+  }
+  
+  .Menu_Link_Style:hover {
+    color: #fc2947;
+  }
+  .Menu_Link_Style img {
+    transition: all 0.3s ease;
+  }
+  .Menu_Link_Style img:hover {
+    filter: brightness(80%);
+  }
+  
+  .Icon_Size {
+    width: 150px;
+    height: 150px;
+  }
+  
 }
-.Border_Box {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 5%;
 
-  width: 90%;
-  height: 300px;
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
-  border-radius: 80px;
-}
-.Other_Categoties {
-  font-family: "Caveat", cursive;
-  font-size: 3rem;
-  padding-top: 150px;
-  text-align: center;
-}
-.Menu_Text {
-  text-align: center;
-  font-family: "Croissant One", cursive;
-  font-size: 1.8rem;
-}
-
-.Underlined_Div {
-  height: 100%;
-  margin-top: 50px;
-  width: 15%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  transition: all 0.1s ease;
-}
-.Underlined_Div:hover {
-  border-bottom: 0px solid #fc2947;
-}
-.Menu_Link_Style {
-  text-decoration: none;
-  color: #000;
-  transition: all 0.3s ease;
-}
-
-.Menu_Link_Style:hover {
-  color: #fc2947;
-}
-.Menu_Link_Style img {
-  transition: all 0.3s ease;
-}
-.Menu_Link_Style img:hover {
-  filter: brightness(80%);
-}
-
-.Icon_Size {
-  width: 150px;
-  height: 150px;
+@media only screen and (max-width: 600px) {
+  .Menu_Text {
+    text-align: center;
+    font-family: "Croissant One", cursive;
+    font-size: 1rem;
+  }
+  .Other_Categoties {
+    font-family: "Caveat", cursive;
+    font-size: 1.9rem;
+    padding-top: 80px;
+    text-align: center;
+  }
+  .Icon_Size {
+    width: 80%;
+    height:  60%;
+  }
+  .Menu_Horizontal_Aligner {
+    display: flex;
+    justify-content: center;
+  }
+  .Border_Box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2%;
+  padding-top: 20px;
+    width: 95%;
+    height: 120px;
+    margin-bottom: 50px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+  }
+  .Menu_Link_Style {
+    text-decoration: none;
+    color: #000;
+    transition: all 0.3s ease;
+  }
+  
+  .Menu_Link_Style:hover {
+    color: #fc2947;
+  }
+  .Menu_Link_Style img {
+    transition: all 0.3s ease;
+  }
+  .Menu_Link_Style img:hover {
+    filter: brightness(80%);
+  }
 }

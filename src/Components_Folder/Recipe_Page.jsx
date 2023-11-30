@@ -29,7 +29,7 @@ const Label2 = GetLabel(25)
           <h1>{props.Name}</h1>
         </div>
         <div className={styles.Line}>
-          <img src={Lines} width="400px" className={styles.Line}></img>
+          <img src={Lines} className={styles.Line} ></img>
         </div>
       </div>
       <div className={styles.Image_Ingredients_Box}>
@@ -42,7 +42,7 @@ const Label2 = GetLabel(25)
         </div>
         <div className={styles.Ingredients}>
           <div className={styles.Ing_Header}>
-            <img src={Ingr_Icon} width="60px" alt="Ingredients Icon"></img>
+            <img src={Ingr_Icon} className={styles.Ingr_Logo} alt="Ingredients Icon"></img>
             <p>{Label1}</p>
           </div>
           <div className={styles.Ing_List}>
@@ -59,11 +59,13 @@ const Label2 = GetLabel(25)
           <p>{props.Additional}</p>
         </div>
       </div>
+      <div className={styles.Underlined_Name}>
       <div className={styles.Steps_Text}>
         <h1>Кроки</h1>
       </div>
       <div className={styles.Line}>
-        <img src={Line} width="400px" className={styles.Line}></img>
+        <img src={Line}  className={styles.Line}></img>
+      </div>
       </div>
       <div className={styles.Steps_Box}>
         <div className={styles.Steps_Container}>

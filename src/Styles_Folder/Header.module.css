@@ -1,144 +1,348 @@
-.Header_Background {
-  width: 100%;
- left: 0;
-  height: 70px;
-  background-color: white;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  top: 0;
-  position: fixed;
-  z-index: 1000;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
-}
-.Logo_Style {
-  width: 80px;
-}
-.Logo_Text_Container {
-  display: flex;
-  flex-direction: column;
-}
-.Logo_Text_Main {
-  font-family: "Caveat", cursive;
-  font-size: 75%;
-  margin: 0;
-}
-.Logo_Text_Down {
-  font-family: "Caveat", cursive;
-  font-size: 70%;
-  padding-left: 20px;
-  margin: 0;
-  width: 150px;
-}
-.Logo_Container {
-  font-size: 35px;
-  color: #fc2947;
-  width: 15%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-left: 50px;
-}
+@media only screen and (min-width: 1025px) {
+  .Mob_Nav_Button {
+    display: none;
+  }
+  .Header_Background {
+    width: 100%;
+    left: 0;
+    height: 70px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    top: 0;
+    position: fixed;
+    z-index: 1000;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  .Logo_Style {
+    width: 80px;
+  }
+  .Logo_Text_Container {
+    display: flex;
+    flex-direction: column;
+  }
+  .Logo_Text_Main {
+    font-family: "Caveat", cursive;
+    font-size: 75%;
+    margin: 0;
+  }
+  .Logo_Text_Down {
+    font-family: "Caveat", cursive;
+    font-size: 70%;
+    padding-left: 20px;
+    margin: 0;
+    width: 150px;
+  }
+  .Logo_Container {
+    font-size: 35px;
+    color: #fc2947;
+    width: 15%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 50px;
+  }
 
-.Link_Nav {
-  list-style-type: none;
-  text-decoration: none;
-  color: #bb2525;
-  margin: 0;
-  padding: 0;
-  transition: text-decoration 0.3s ease-in-out;
-}
-.Link_Nav:hover {
-  text-decoration: underline;
-  color: black;
-}
-.Buttons_Container {
-  width: 50%;
-  height: 100%;
-}
-.Nav_Buttons {
-  font-size: 1.5rem;
-  font-family: "Croissant One", cursive;
-  display: flex;
-  margin: 0;
-  height: 100%;
-  flex-direction: row;
-  text-decoration: none;
-  list-style: none;
-  justify-content: space-around;
-  align-items: center;
-  gap: 2rem;
-}
-.active {
-  text-decoration: underline;
-}
-.Contact_Container {
-  width: 20%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  color: #bb2525;
-  font-size: 1.5em;
-  font-family: "Croissant One", cursive;
-}
+  .Link_Nav {
+    list-style-type: none;
+    text-decoration: none;
+    color: #bb2525;
+    margin: 0;
+    padding: 0;
+    transition: text-decoration 0.3s ease-in-out;
+  }
+  .Link_Nav:hover {
+    text-decoration: underline;
+    color: black;
+  }
+  .Buttons_Container {
+    width: 50%;
+    height: 100%;
+  }
+  .Nav_Buttons {
+    font-size: 1.5rem;
+    font-family: "Croissant One", cursive;
+    display: flex;
+    margin: 0;
+    height: 100%;
+    flex-direction: row;
+    text-decoration: none;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+  }
+  .active {
+    text-decoration: underline;
+  }
+  .Contact_Container {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color: #bb2525;
+    font-size: 1.5em;
+    font-family: "Croissant One", cursive;
+  }
 
-.Search_Box {
-  font-size: 2em;
-  color: #bb2525;
-  margin: 8px 0px 0px 0px;
-}
+  .Search_Box {
+    font-size: 2em;
+    color: #bb2525;
+    margin: 8px 0px 0px 0px;
+  }
 
-.Contact_Search_Box {
-  width: 20%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-}
+  .Contact_Search_Box {
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
 
-.ActiveLink {
-  color: #000;
-  text-decoration: underline;
-}
+  .ActiveLink {
+    color: #000;
+    text-decoration: underline;
+  }
 
-.Search_Container {
-  max-width: 0;
-  transition: max-width 0.2s ease-in-out;
+  .Search_Container {
+    max-width: 0;
+    transition: max-width 0.2s ease-in-out;
+  }
 
-}
+  .Search_Container.active {
+    max-width: 200px; /* або будь-яке інше значення, яке вам підходить */
+  }
 
-
-.Search_Container.active {
-  max-width: 200px; /* або будь-яке інше значення, яке вам підходить */
-}
-
-.None {
-  max-width: 0;
-  box-shadow: 0 0 0px rgba(68, 4, 4, 0.5);
+  .None {
+    max-width: 0;
+    box-shadow: 0 0 0px rgba(68, 4, 4, 0.5);
     overflow: hidden;
-}
+  }
 
-.SearchButton {
-  border: none;
-  background-color: white;
-  font-size: 1em;
-  color: #bb2525;
-  transition: ease-in-out 0.2s;
-  border-radius: 50%;
- width: 40px;
- margin-left: 5px;
+  .SearchButton {
+    border: none;
+    background-color: white;
+    font-size: 1em;
+    color: #bb2525;
+    transition: ease-in-out 0.2s;
+    border-radius: 50%;
+    width: 40px;
+    margin-left: 5px;
+  }
+  .SearchButton:hover {
+    transition: ease-in-out 0.2s;
+    color: black;
+  }
+  .Input_Box {
+    width: 80px;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 0 2px rgba(68, 4, 4, 0.5);
+    border: none;
+    margin-left: 70px;
+    margin-top: 5px;
+  }
+  .Navbar_Mobile {
+ display: none;
+  }
 }
-.SearchButton:hover {
-  transition: ease-in-out 0.2s;
-  color: black;
-}
-.Input_Box {
-  width: 80px;
-  border-radius: 10px;
-  padding: 10px;
-  box-shadow: 0 0 2px rgba(68, 4, 4, 0.5);
-  border: none;
-  margin-left: 70px;
-  margin-top: 5px;
+@media only screen and (max-width: 600px) {
+  .Header_Background {
+    width: 100%;
+    left: 0;
+    height: 70px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    top: 0;
+    position: fixed;
+    z-index: 1000;
+  }
+  .Logo_Style {
+    width: 40px;
+  }
+  .Logo_Text_Container {
+    display: flex;
+    flex-direction: column;
+  }
+  .Logo_Text_Main {
+    font-family: "Caveat", cursive;
+    font-size: 55%;
+    margin: 0;
+  }
+  .Logo_Text_Down {
+    font-family: "Caveat", cursive;
+    font-size: 50%;
+    padding-left: 20px;
+    margin: 0;
+    width: 150px;
+  }
+  .Logo_Container {
+    font-size: 35px;
+    color: #fc2947;
+    width: 15%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 80px;
+  }
+
+  .Link_Nav {
+    display: none;
+  }
+  .Link_Nav:hover {
+
+    color: black;
+  }
+  .Buttons_Container {
+    width: 50%;
+    height: 100%;
+  }
+  /* .Nav_Buttons {
+    font-size: 1.5rem;
+    font-family: "Croissant One", cursive;
+    display: flex;
+    margin: 0;
+    height: 100%;
+    flex-direction: row;
+    text-decoration: none;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+  } */
+  .Nav_Buttons {
+    display: none;
+  }
+
+  .Contact_Container {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color: #bb2525;
+    font-size: 1.5em;
+    font-family: "Croissant One", cursive;
+  }
+
+  .Search_Box {
+    font-size: 2em;
+    color: #bb2525;
+    margin: 8px 0px 0px 0px;
+  }
+
+  .Contact_Search_Box {
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .ActiveLink {
+    color: #000;
+    text-decoration: underline;
+  }
+
+  .Search_Container {
+    max-width: 0;
+    transition: max-width 0.2s ease-in-out;
+  }
+
+  .Search_Container.active {
+    max-width: 200px; /* або будь-яке інше значення, яке вам підходить */
+  }
+
+  .SearchButton {
+    border: none;
+    background-color: white;
+    font-size: 1em;
+    color: #bb2525;
+    transition: ease-in-out 0.2s;
+    border-radius: 50%;
+    width: 40px;
+    margin-left: 5px;
+  }
+  .SearchButton:hover {
+    transition: ease-in-out 0.2s;
+    color: black;
+  }
+  .Input_Box {
+    width: 80px;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 0 2px rgba(68, 4, 4, 0.5);
+    border: none;
+   
+    margin-top: 5px;
+  }
+  .Mob_Nav_Button {
+    border: none;
+    font-size: 30px;
+    margin-right: 10px;
+    color: #bb2525;
+    background-color: white;
+    margin-top: 5px;
+  }
+  .Mob_Nav_Button:hover {
+    color: #000;
+  }
+  .Navbar_Mobile {
+top:70px;
+    width: 100%;
+    position: fixed;
+    height: 0;
+
+    background-color: white;
+z-index: 100;
+    overflow: hidden;
+    transition: height 0.3s ease-in-out; /* Додайте transition для плавної анімації */
+  }
+
+  .Navbar_Mobile.active {
+    height: 250px; /* або будь-яке інше значення, яке вам підходить */
+  }
+
+  .None {
+    height: 0;
+    overflow: hidden;
+  }
+
+  .Navbar_Mobile *,
+  .None * {
+    transition: all 0.3s ease-in-out; /* Додайте transition для всіх елементів в навбарі */
+  }
+  .Mob_Nav_Line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.3); 
+
+    height: 50px;
+    font-size: 20px;
+    text-decoration: none;
+    color:#bb2525
+  }
+  .ActiveLink {
+    color: #000;
+    text-decoration: underline;
+    
+  }
+
+  .Link_Nav_Mob {
+    list-style-type: none;
+    text-decoration: none;
+    
+    color: #bb2525;
+
+
+  }
+  .Contact_Container{
+    display: none;
+  }
 }
