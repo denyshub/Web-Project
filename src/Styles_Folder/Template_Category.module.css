@@ -2,14 +2,14 @@
   .Buttons_Div {
     margin-top: 100px;
     width: 100%;
-    
+
     display: flex;
     height: 100px;
     gap: 200px;
     flex-direction: row;
     justify-content: center;
   }
-  
+
   .Buttons {
     border-radius: 50px;
     border: 3px solid #fc2947;
@@ -20,40 +20,40 @@
     font-family: "Croissant One", cursive;
     background-color: #fc2947;
   }
-  
+
   .Dropdown_Div {
     position: absolute;
     width: fit-content;
     color: black;
     gap: 1rem;
-  
+
     background-color: #faf3f0;
     display: flex;
     flex-direction: row;
-  
+
     border-radius: 10px;
     margin-top: 10px;
-  
+
     overflow: hidden;
     max-height: 0;
     transition: max-height 0.2s ease-in-out;
   }
-  
+
   .Dropdown_Div.active {
     max-height: 200px; /* або будь-яке інше значення, яке вам підходить */
   }
-  
+
   .None {
     max-height: 0;
     overflow: hidden;
   }
-  
+
   /* Додайте transition для всіх дочірніх елементів, які можуть змінювати розмір */
   .Dropdown_Div *,
   .None * {
     transition: all 0.2s ease;
   }
-  
+
   .Dropdown_Buttons {
     color: black;
     margin-top: 10px;
@@ -62,7 +62,7 @@
     width: 80px;
     font-family: "Croissant One", cursive;
   }
-  
+
   .Dropdown_Column {
     display: flex;
     background-color: rgba(101, 101, 101, 0.219);
@@ -71,32 +71,31 @@
     flex-direction: column;
     border-radius: 10px;
     padding: 10px;
-  
+
     align-items: center;
   }
   .ButtonDiv {
     width: 100px;
     height: 200px;
   }
-  
+
   .Label_Drop h4 {
     height: 2px;
     margin-top: 0;
   }
-  
 }
 @media only screen and (max-width: 600px) {
   .Buttons_Div {
     margin-top: 100px;
     width: 100%;
-    
+
     display: flex;
     height: 100px;
     gap: 50px;
     flex-direction: row;
     justify-content: center;
   }
-  
+
   .Buttons {
     border-radius: 50px;
     border: 3px solid #fc2947;
@@ -107,40 +106,40 @@
     font-family: "Croissant One", cursive;
     background-color: #fc2947;
   }
-  
+
   .Dropdown_Div {
     position: absolute;
     width: fit-content;
     color: black;
     gap: 0.4rem;
-  
+
     background-color: #faf3f0;
     display: flex;
     flex-direction: row;
-  
+
     border-radius: 10px;
     margin-top: 3px;
-  
+
     overflow: hidden;
     max-height: 0;
     transition: max-height 0.2s ease-in-out;
   }
-  
+
   .Dropdown_Div.active {
     max-height: 150px; /* або будь-яке інше значення, яке вам підходить */
   }
-  
+
   .None {
     max-height: 0;
     overflow: hidden;
   }
-  
+
   /* Додайте transition для всіх дочірніх елементів, які можуть змінювати розмір */
   .Dropdown_Div *,
   .None * {
     transition: all 0.2s ease;
   }
-  
+
   .Dropdown_Buttons {
     color: black;
     font-size: 11px;
@@ -150,7 +149,7 @@
     width: 70px;
     font-family: "Croissant One", cursive;
   }
-  
+
   .Dropdown_Column {
     display: flex;
     background-color: rgba(101, 101, 101, 0.219);
@@ -160,17 +159,105 @@
     flex-direction: column;
     border-radius: 10px;
     padding: 0px 10px 10px 10px;
-  
+
     align-items: center;
   }
   .ButtonDiv {
     width: 100px;
     height: 200px;
   }
-  
+
   .Label_Drop h4 {
     height: 2px;
     margin-top: 0;
   }
+}
 
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  .Buttons_Div {
+    margin-top: 100px;
+    width: 100%;
+
+    display: flex;
+    height: 100px;
+    gap: 150px;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .Buttons {
+    border-radius: 50px;
+    border: 3px solid #fc2947;
+    width: 150px;
+    height: 40px;
+    color: white;
+    font-size: 15px;
+    font-family: "Croissant One", cursive;
+    background-color: #fc2947;
+  }
+
+  .Dropdown_Div {
+    position: absolute;
+    width: fit-content;
+    color: black;
+    gap: 0.4rem;
+
+    background-color: #faf3f0;
+    display: flex;
+    flex-direction: row;
+
+    border-radius: 10px;
+    margin-top: 3px;
+
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.2s ease-in-out;
+  }
+
+  .Dropdown_Div.active {
+    max-height: 200px; /* або будь-яке інше значення, яке вам підходить */
+  }
+
+  .None {
+    max-height: 0;
+    overflow: hidden;
+  }
+
+  /* Додайте transition для всіх дочірніх елементів, які можуть змінювати розмір */
+  .Dropdown_Div *,
+  .None * {
+    transition: all 0.2s ease;
+  }
+
+  .Dropdown_Buttons {
+    color: black;
+    font-size: 15px;
+    margin-top: 10px;
+    border-radius: 20px;
+    height: 30px;
+    width: 90px;
+    font-family: "Croissant One", cursive;
+  }
+
+  .Dropdown_Column {
+    display: flex;
+    background-color: rgba(101, 101, 101, 0.219);
+    width: 80px;
+    font-size: 16px;
+    font-family: "Croissant One", cursive;
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 0px 10px 10px 10px;
+
+    align-items: center;
+  }
+  .ButtonDiv {
+    width: 100px;
+    height: 200px;
+  }
+
+  .Label_Drop h4 {
+    height: 2px;
+    margin-top: 0;
+  }
 }

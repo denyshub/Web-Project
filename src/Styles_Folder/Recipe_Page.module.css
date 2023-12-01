@@ -206,7 +206,7 @@
     text-indent: 40px; /* Перший рядок буде зміщений на 20px */
   }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 600px)  {
   .Image_Ingredients_Box {
     width: 100%;
 
@@ -406,3 +406,201 @@
     text-indent: 40px; /* Перший рядок буде зміщений на 20px */
   }
 }
+@media only screen and (min-width: 601px) and (max-width: 1024px) { .Image_Ingredients_Box {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 50px;
+  max-height: 1505px;
+}
+
+.Food_Name {
+  margin-top: 100px;
+  height: 20px;
+  width: 100%;
+  font-size: 1.5rem;
+  justify-content: center;
+  font-family: "Caveat", cursive;
+  display: flex;
+  align-items: center;
+}
+.Image_Box {
+  width: 80%;
+
+  height: 350px;
+}
+.Main_Image_Style {
+  border-radius: 50px;
+  height: 100%;
+  width: 100%;
+}
+.Ing_Header {
+  display: flex;
+  flex-direction: row;
+
+  margin-top: 20px;
+  width: 100%;
+  height: 50px;
+  font-size: 1.2rem;
+  justify-content: center;
+  align-items: center;
+  font-family: "Croissant One", cursive;
+}
+.Ingredients {
+  width: 90%;
+  height: 100%;
+}
+
+.Underlined_Name {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+.Line {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+.Ing_List li{
+margin-left: 30px;
+}
+.Ing_List {
+  font-family: "Croissant One", cursive;
+  font-size: 1.2rem;
+  padding: 10px 0 10px 0px;
+  width: 100%;
+  text-align: left;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 50px;
+}
+
+.Steps_Text {
+  color: black;
+  height: 40px;
+  width: 100%;
+  padding-top: 150px;
+  font-size: 1.3rem;
+  justify-content: center;
+  font-family: "Caveat", cursive;
+  display: flex;
+  align-items: center;
+}
+.Steps_Box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.step_label {
+  margin-left: 10%;
+  font-family: "Caveat", cursive;
+  font-size: 2rem;
+  color: #fc2947;
+}
+
+.step_description {
+  font-family: "Croissant One", cursive;
+  font-size: 1.3rem;
+  margin-left: 5%;
+}
+
+.Steps_Container {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  width: 90%;
+  margin-top: 50px;
+}
+
+.Step_Boarder {
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 50px;
+  padding: 5px;
+  transition: all 0.3s ease;
+}
+.Step_Boarder_Done {
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  border-radius: 50px;
+  padding: 20px;
+  filter: blur(4px);
+}
+h2 {
+  filter: blur(0px);
+}
+.IsDone {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.Check_Label {
+  background-color: #fdf4f5;
+  font-family: "Caveat", cursive;
+  font-size: 1.5rem;
+  color: green;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70px;
+  margin-right: 40px;
+  transition: all 0.3s ease;
+}
+.Check_Label:hover {
+  font-size: 1.47rem;
+  color: #fc2947;
+}
+
+.Not_Checked_Label {
+  background-color: #fdf4f5;
+  font-family: "Caveat", cursive;
+  font-size: 1.5rem;
+  color: #fc2947;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70px;
+  margin-right: 40px;
+  transition: all 0.3s ease;
+}
+
+.Not_Checked_Label:hover {
+  color: green;
+  font-size: 1.47rem;
+}
+
+.Additional_Title {
+  color: #fc2947;
+  height: 40px;
+  width: 100%;
+  padding-top: 50px;
+  font-size: 2rem;
+  justify-content: center;
+  font-family: "Caveat", cursive;
+  display: flex;
+  align-items: center;
+}
+
+.Additional_Info_Container {
+  width: 100%;
+}
+
+.Additional_Text {
+  font-family: "Croissant One", cursive;
+  font-size: 2rem;
+  width: 95%;
+  padding-left: 4%;
+}
+.Ingr_Logo {
+  width: 30px;
+}
+p {
+  text-indent: 40px; /* Перший рядок буде зміщений на 20px */
+}}

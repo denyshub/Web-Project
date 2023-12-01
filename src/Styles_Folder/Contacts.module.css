@@ -1,196 +1,269 @@
-
 @media only screen and (min-width: 1025px) {
-  .Suggest_Text{
+  .Suggest_Text {
     padding-top: 70px;
     overflow: hidden;
     font-family: "Caveat", cursive;
     text-align: center;
     font-size: 2rem;
     color: black;
-  
-  
-    
   }
-  
-  .Suggest_Text h1{
-  
+
+  .Suggest_Text h1 {
     margin-right: 300px;
   }
-  .Suggest_Text h2{
+  .Suggest_Text h2 {
     color: #272727;
     margin-left: 300px;
   }
-  
-  .Page_Aligner{
+
+  .Page_Aligner {
     margin-top: 100px;
     display: flex;
     flex-direction: column;
-    
   }
-  
-  .Socials_Text{
+
+  .Socials_Text {
     font-family: "Caveat", cursive;
     margin-left: 100px;
-    color:  #fc2947;
-  padding-top: 30px;
+    color: #fc2947;
+    padding-top: 30px;
     font-size: 2rem;
     width: fit-content;
   }
-  
-  .Icons_Menu{
+
+  .Icons_Menu {
     padding-top: 30px;
     display: flex;
     justify-content: center;
-  padding-right: 100px;
+    padding-right: 100px;
   }
-  
-  .Line_Aligner{
+
+  .Line_Aligner {
     display: flex;
-   
+
     flex-direction: column;
   }
-  .Line{
+  .Line {
     margin-left: 120px;
     position: absolute;
-    top:600px
+    top: 600px;
   }
-  .Border_Socials{
-  
-  
+  .Border_Socials {
     display: flex;
     gap: 5%;
-  
-  
-  width: fit-content;
+
+    width: fit-content;
   }
-  body{
-    background-color: #FDF4F5;
+  body {
+    background-color: #fdf4f5;
   }
-  .Soicals_Link{
+  .Soicals_Link {
     font-size: 4rem;
     color: #fc2947;
   }
-  .Div{
+  .Div {
     display: flex;
     flex-direction: row;
     width: 100%;
     align-items: center;
-  justify-content: center;
-  gap: 50px;
-  
+    justify-content: center;
+    gap: 50px;
   }
-  .Lines{
+  .Lines {
     width: 95%;
-  
-  padding-top: 100px;
+
+    padding-top: 100px;
     margin-left: 50px;
   }
-  
-  .Lines1{
+
+  .Lines1 {
     padding-top: 100px;
     width: 100%;
     margin-right: 50px;
   }
 }
 
-
 @media only screen and (max-width: 600px) {
-  .Suggest_Text{
+  .Suggest_Text {
     padding-top: 30px;
     overflow: hidden;
     font-family: "Caveat", cursive;
     text-align: center;
     font-size: 1rem;
     color: black;
-  
-  
-    
   }
-  
-  .Suggest_Text h1{
-  
+
+  .Suggest_Text h1 {
     margin-right: 80px;
   }
-  .Suggest_Text h2{
+  .Suggest_Text h2 {
     color: #272727;
     margin-left: 200px;
   }
-  
-  .Page_Aligner{
+
+  .Page_Aligner {
     margin-top: 60px;
     display: flex;
     flex-direction: column;
-    
   }
-  
-  .Socials_Text{
+
+  .Socials_Text {
     font-family: "Caveat", cursive;
- 
-    color:  #fc2947;
-  padding-top: 30px;
+
+    color: #fc2947;
+    padding-top: 30px;
     font-size: 1rem;
     width: fit-content;
   }
-  
-  .Icons_Menu{
+
+  .Icons_Menu {
     padding-top: 30px;
     display: flex;
     justify-content: center;
-  padding-right: 30px;
-  font-size: 20px;
+    padding-right: 30px;
+    font-size: 20px;
   }
-  .Icons_Menu svg{
+  .Icons_Menu svg {
     width: 10px;
   }
-  .Icons{font-size: 10px;}
-  .Line_Aligner{
+  .Icons {
+    font-size: 10px;
+  }
+  .Line_Aligner {
     display: flex;
-   
+
     flex-direction: column;
   }
-  .Line{
+  .Line {
     margin-left: 120px;
     position: absolute;
-    top:600px
+    top: 600px;
   }
-  .Border_Socials{
-  
-  
+  .Border_Socials {
     display: flex;
     gap: 5%;
-  
-  
-  width: fit-content;
+
+    width: fit-content;
   }
-  body{
-    background-color: #FDF4F5;
+  body {
+    background-color: #fdf4f5;
   }
-  .Soicals_Link{
+  .Soicals_Link {
     font-size: 4rem;
     color: #fc2947;
   }
-  .Div{
+  .Div {
     display: flex;
     flex-direction: row;
     width: 100%;
     align-items: center;
-  justify-content: center;
-  gap: 20px;
-  
+    justify-content: center;
+    gap: 20px;
   }
-  .Lines{
+  .Lines {
     width: 95%;
-  
-  padding-top: 100px;
+
+    padding-top: 100px;
     margin-left: 50px;
   }
-  
-  .Lines1{
+
+  .Lines1 {
     padding-top: 100px;
     width: 100%;
     margin-right: 50px;
   }
-  .Soicals_Link{
+  .Soicals_Link {
     font-size: 45px;
   }
+}
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  .Suggest_Text {
+    padding-top: 30px;
+    overflow: hidden;
+    font-family: "Caveat", cursive;
+    text-align: center;
+    font-size: 1.5rem;
+    color: black;
+  }
+
+  .Suggest_Text h1 {
+    margin-right: 80px;
+  }
+  .Suggest_Text h2 {
+    color: #272727;
+    margin-left: 200px;
+  }
+
+  .Page_Aligner {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .Socials_Text {
+    font-family: "Caveat", cursive;
+
+    color: #fc2947;
+    padding-top: 30px;
+    font-size: 1.6rem;
+    width: fit-content;
+  }
+
+  .Icons_Menu {
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    padding-right: 30px;
+    font-size: 2px;
+  }
+
+  .Icons {
+    font-size: 15px;
+  }
+  .Line_Aligner {
+    display: flex;
+
+    flex-direction: column;
+  }
+  .Line {
+    margin-left: 120px;
+    position: absolute;
+    top: 600px;
+  }
+  .Border_Socials {
+    display: flex;
+    gap: 5%;
+
+    width: fit-content;
+  }
+  body {
+    background-color: #fdf4f5;
+  }
+  .Soicals_Link {
+    font-size: 4.5rem;
+    color: #fc2947;
+  }
+  .Div {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  .Lines {
+    width: 95%;
+
+    padding-top: 100px;
+    margin-left: 50px;
+  }
+
+  .Lines1 {
+    padding-top: 100px;
+    width: 100%;
+    margin-right: 50px;
+  }
+  .Soicals_Link {
+    font-size: 45px;
+  } 
 }

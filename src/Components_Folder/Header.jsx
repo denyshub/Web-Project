@@ -119,7 +119,10 @@ const Header = ({ setQuery }) => {
                 }
               }}
               onChange={(e) => setQuery1(e.target.value)}
-              className={styles.Input_Box}
+     
+              className={`${styles.Input_Box} ${
+                navbar === 1 ? styles.active : styles.None_Search
+              }`}
             />
           </div>
           <div className={styles.Search_Box}>
