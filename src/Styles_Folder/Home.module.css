@@ -130,7 +130,7 @@
 @media only screen and (min-width: 601px) and (max-width: 1024px) {
   .Background_Image {
     width: 100vw;
-    height: 450px;
+    height: 500px;
     position: absolute;
 
     z-index: -1;
@@ -177,9 +177,9 @@
     font-family: "Caveat", cursive;
     color: #fc2947;
     height: 70px;
-    font-size: 1rem;
+    font-size: 1.1rem;
     text-align: center;
-    padding-top: 180px;
+    padding-top: 250px;
   }
   .Lines_Container {
     width: 100%;
