@@ -121,7 +121,7 @@ const FilteredRecipes = ({ Data, Category, Text }) => {
             {" "}
             <div className={styles.Dropdown_Column}>
               <div className={styles.Label_Drop}>
-                <h4>За складністю</h4>
+                <h4>Cкладність</h4>
               </div>
               <button
                 onClick={() => setSortCriteria("difficulty2")}
@@ -138,7 +138,7 @@ const FilteredRecipes = ({ Data, Category, Text }) => {
             </div>
             <div className={styles.Dropdown_Column}>
               <div className={styles.Label_Drop}>
-                <h4>За Часом</h4>
+                <h4>Час</h4>
               </div>
               <button
                 onClick={() => setSortCriteria("time2")}
