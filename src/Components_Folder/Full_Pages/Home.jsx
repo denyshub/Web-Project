@@ -1,17 +1,21 @@
-import React from "react";
+import React, {useEffect} from "react";
 import Everyday_Recipes from "../Everyday_recipes";
 import styles from "../../Styles_Folder/Home.module.css";
 import Food_Menu from "../Main_Food_Menu";
-import First from "../../Pictures/Перші страви.jpg";
-import Second from "../../Pictures/Другі страви.jpg";
-import Desert from "../../Pictures/Десерти.jpg";
-import Background from "../../Pictures/background.jpg";
+import First from "../../Pictures/Перші страви.webp";
+import Second from "../../Pictures/Другі страви.webp";
+import Desert from "../../Pictures/Десерти.webp";
+import Background from "../../Pictures/background.webp";
 import Under_Image_Menu from "../Under_Image_Menu";
 import Lines from "../../Pictures/lines.svg";
 import GetLabel from "../GetLabel";
 
 const Home = ({ Data }) => {
   console.log(Data);
+
+  useEffect(() => {
+    window.scrollTo(0, 0); // Прокручуємо до верху сторінки при завантаженні цієї сторінки
+  }, []);
 
   const label1 = GetLabel(1);
   const label2 = GetLabel(2);
@@ -29,6 +33,7 @@ const Home = ({ Data }) => {
           <div className={styles.Text_Menu_Aligner}>
             <div className={styles.Test}>
               <img
+         
                 className={styles.Background_Image}
                 src={Background}
                 alt="Background"

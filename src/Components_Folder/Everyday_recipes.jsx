@@ -1,12 +1,6 @@
 import React from "react";
-import styles from "../Styles_Folder/Everyday_Recipes.module.css";
 import Recipe from "./Recipe_Component";
-import Olivie from "../Pictures/Олів'є.jpg";
-import Shuba from "../Pictures/Оселедець під шубою.jpeg";
-import Sharlotka from "../Pictures/Шарлотка.jpg";
-import Deruny from "../Pictures/Деруни.jpg";
-import Kachka from "../Pictures/Качка по-пекінськи.jpg";
-import Mlyntsi from "../Pictures/Млинці.jpeg";
+
 
 import Footer from "./Footer";
 import Recipe_List from "./Recipes_List_Component";
