@@ -32,7 +32,7 @@ function EveryDay_Map_Function(data) {
     ));
 }
 
-const Everyday_Recipes = ({ Data, Label}) => {
+const Everyday_Recipes = ({ Data, Label }) => {
   return (
     <>
       <Recipe_List

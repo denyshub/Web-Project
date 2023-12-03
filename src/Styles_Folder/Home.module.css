@@ -9,6 +9,9 @@
   .Line {
     width: 250px;
   }
+  .testik{
+    margin-top: 200px;
+  }
   .Food_Menu {
     width: 100%;
     display: flex;
@@ -56,9 +59,21 @@
     display: flex;
     justify-content: center;
   }
+  .Loading{
+    margin-top: 200px;
+    font-size: 30px;
+    text-align: center;
+    font-family: "Caveat", cursive;
+  }
 }
 
 @media only screen and (min-width: 1025px) {
+  .Loading{
+    margin-top: 200px;
+    font-size: 50px;
+    text-align: center;
+    font-family: "Caveat", cursive;
+  }
   .Lines_Container {
     width: 100%;
     display: flex;
@@ -134,6 +149,12 @@
     position: absolute;
 
     z-index: -1;
+  }
+  .Loading{
+    margin-top: 200px;
+    font-size: 30px;
+    text-align: center;
+    font-family: "Caveat", cursive;
   }
   .Line {
     width: 250px;

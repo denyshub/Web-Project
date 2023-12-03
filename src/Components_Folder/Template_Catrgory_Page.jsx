@@ -102,6 +102,7 @@ const FilteredRecipes = ({ Data, Category, Text }) => {
   const Food_Label = GetLabel(Text);
   return (
     <>
+  
       <div className={styles.Buttons_Div}>
         <div className={styles.Sort_Dropdown_Container}>
           <button
@@ -226,7 +227,7 @@ const FilteredRecipes = ({ Data, Category, Text }) => {
           </div>
         </div>
       </div>
-
+{Data && Data.data?(
       <Recipe_List
         Category={filteredRecipes.map((recipe) => (
           <Recipe
@@ -239,7 +240,7 @@ const FilteredRecipes = ({ Data, Category, Text }) => {
         ))}
         Text={Food_Label}
         StyleName="Everyday_Text"
-      />
+      />):  <p className={styles.Loading}>Loading...</p>}
     </>
   );
 };

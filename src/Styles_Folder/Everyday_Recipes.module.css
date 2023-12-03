@@ -1,4 +1,10 @@
 @media only screen and (min-width: 1025px) {
+  .Loading{
+    margin-top: 200px;
+    font-size: 50px;
+    text-align: center;
+    font-family: "Caveat", cursive;
+  }
   .Everyday_Text {
     font-family: "Caveat", cursive;
     font-size: 3rem;
@@ -77,6 +83,12 @@
   }
 }
 @media only screen and (max-width: 600px) {
+  .Loading{
+    margin-top: 200px;
+    font-size: 30px;
+    text-align: center;
+    font-family: "Caveat", cursive;
+  }
   .Everyday_Text_Main {
     font-family: "Caveat", cursive;
     font-size: 2rem;
@@ -162,6 +174,12 @@
 }
 
 @media only screen and (min-width: 601px) and (max-width: 1024px) {
+  .Loading{
+    margin-top: 200px;
+    font-size: 30px;
+    text-align: center;
+    font-family: "Caveat", cursive;
+  }
   .Everyday_Text {
     font-family: "Caveat", cursive;
     font-size: 2.5rem;
@@ -182,7 +200,7 @@
     height: 20px;
   }
   .Everyday_Text_Aligner {
-    width: 27%;
+    width: 35%;
     margin-left: 100px;
     margin-top: 70px;
     height: 130px;

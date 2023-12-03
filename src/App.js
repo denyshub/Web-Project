@@ -10,8 +10,9 @@ import useFetch from "./Components_Folder/API_Fetch";
 import Search_Results from "./Components_Folder/Search_Results";
 // http://localhost:1337/api/recipes?populate=*?sort[0]=name:acs
 function App() {
-  const [query, setQuery] = useState(''); 
-console.log(query)
+  const [query, setQuery] = useState("");
+  const [isLoading, setIsLoading] = useState(true);
+  console.log(query);
   const apiUrl = "http://localhost:1337/api/recipes?populate=*";
 
   const { loading, error, data } = useFetch(apiUrl);
@@ -19,17 +20,18 @@ console.log(query)
   useEffect(() => {
     if (data) {
       console.log("Отримані дані з API:", data);
- 
+      setIsLoading(false);
     }
 
     if (error) {
-      console.error("Помилка отримання даних з API:", error);
+      return <h1>ERROR</h1>;
     }
   }, [data, error]);
 
   return (
     <>
-      <Header query={query} setQuery = {setQuery}/>
+      <Header query={query} setQuery={setQuery} />
+
       <Routes>
         <Route path="/" element={<Home Data={data} />} />
         <Route
@@ -52,9 +54,9 @@ console.log(query)
           path="/sousy"
           element={<Category_Page Data={data} Category={8} Text={9} />}
         />
-         <Route
+        <Route
           path="/search-results"
-          element={<Search_Results Data={data} Name = {query} />}
+          element={<Search_Results Data={data} Name={query} />}
         />
         <Route path="/contacty" element={<Contacts />} />
         {data &&

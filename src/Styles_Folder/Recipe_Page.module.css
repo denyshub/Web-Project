@@ -1,4 +1,10 @@
 @media only screen and (min-width: 1025px) {
+  .Loading{
+    margin-top: 200px;
+    font-size: 50px;
+    text-align: center;
+    font-family: "Caveat", cursive;
+  }
   .Image_Ingredients_Box {
     width: 100%;
     margin-top: 70px;
@@ -217,7 +223,12 @@
     margin-top: 50px;
     max-height: 1505px;
   }
-
+  .Loading{
+    margin-top: 200px;
+    font-size: 30px;
+    text-align: center;
+    font-family: "Caveat", cursive;
+  }
   .Food_Name {
     margin-top: 100px;
     height: 20px;
@@ -416,7 +427,12 @@
   margin-top: 50px;
   max-height: 1505px;
 }
-
+.Loading{
+  margin-top: 200px;
+  font-size: 30px;
+  text-align: center;
+  font-family: "Caveat", cursive;
+}
 .Food_Name {
   margin-top: 100px;
   height: 20px;
